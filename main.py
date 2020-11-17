@@ -35,14 +35,17 @@ def create_dataframe_with_head_row(row):  # head_row = the first row that contai
     return df
 
 
+# this function loads the  data from the json objects (that has been converted to dictionaries) into the dataframe
 def load_data_from_json_to_df(df, data):
     for key, value in data.items():
         df = df.append(value, ignore_index=True)
-    df = df.append(pd.Series(), ignore_index=True)
+    df = df.append(pd.Series(), ignore_index=True)  # this adds one empty row - because i want the output file to be
+    # more readable
     return df
 
 
-def create_tokend_dataframe(string, col_name):
+# this function will add the tokenized, lemmas , and segmented sentences into a dataframe.
+def create_tokened_dataframe(string, col_name):
     splitted_string = string.split()
     indices = [col_name + " " + str(x) for x in range(len(splitted_string))]
     dict_of_words = dict(zip(indices, splitted_string))
@@ -64,9 +67,9 @@ md_lattice = create_dataframe_with_head_row(dict_from_json[MD_LATTICE]['0'])
 dep_tree_df = load_data_from_json_to_df(dep_tree_df, dict_from_json[DEPENDENCY_TREE])
 ma_lattice = load_data_from_json_to_df(ma_lattice, dict_from_json[MA_LATTICE])
 md_lattice = load_data_from_json_to_df(md_lattice, dict_from_json[MD_LATTICE])
-tokenized_df = create_tokend_dataframe(dict_from_json[TOKENIZED], 'token')
-lemma_df = create_tokend_dataframe(dict_from_json[LEMMAS], 'lemma')
-segment_df = create_tokend_dataframe(dict_from_json[SEGMENTED], 'segment')
+tokenized_df = create_tokened_dataframe(dict_from_json[TOKENIZED], 'token')
+lemma_df = create_tokened_dataframe(dict_from_json[LEMMAS], 'lemma')
+segment_df = create_tokened_dataframe(dict_from_json[SEGMENTED], 'segment')
 
 tokenized_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
 lemma_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
