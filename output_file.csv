@@ -1,8 +1,18 @@
-﻿,num,word,lemma,pos,pos_2,empty,dependency_arc,dependency_part,dependency_arc_2,dependency_part_2
+﻿,token 0,token 1,token 2
+0,בתוך,עיניה,הכחולות
+1,,,
+,lemma 0,lemma 1,lemma 2,lemma 3
+0,בתוך,עין,ה,כחול
+1,,,,
+,segment 0,segment 1,segment 2,segment 3
+0,בתוך,עיניה,ה,כחולות
+1,,,,
+,num,word,lemma,pos,pos_2,empty,dependency_arc,dependency_part,dependency_arc_2,dependency_part_2
 0,1,בתוך,בתוך,IN,IN,,0,ROOT,_,_
 1,2,עיניה,עין,NN,NN,gen=F|num=P|suf_gen=F|suf_num=S|suf_per=3,1,pobj,_,_
 2,3,ה,ה,DEF,DEF,,4,def,_,_
 3,4,כחולות,כחול,JJ,JJ,gen=F|num=P,2,amod,_,_
+4,,,,,,,,,,
 ,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,suf_gen,suf_num,suf_per,tense,word
 0,PREPOSITION,1,ב,0,1,-1,-1,-1,PREPOSITION,-1,-1,-1,-1,-1,ב
 1,IN,1,בתוך,0,3,-1,-1,-1,IN,-1,-1,-1,-1,-1,בתוך
@@ -33,8 +43,10 @@
 26,JJ,3,כחול,5,7,-1,P,-1,JJ,-1,-1,-1,-1,-1,כחולות
 27,JJT,3,כחול,6,7,-1,P,-1,JJT,-1,-1,-1,-1,-1,כחולות
 28,JJ,3,כחול,6,7,-1,P,-1,JJ,-1,-1,-1,-1,-1,כחולות
+29,,,,,,,,,,,,,,,
 ,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,tense,word
 0,-1,-1,בתוך,0,1,1,-1,-1,IN,IN,-1,בתוך
 1,-1,F,עין,1,2,2,P,-1,NN,NN,-1,עיניה
 2,-1,-1,ה,2,3,3,-1,-1,DEF,DEF,-1,ה
 3,-1,F,כחול,3,4,3,P,-1,JJ,JJ,-1,כחולות
+4,,,,,,,,,,,,
