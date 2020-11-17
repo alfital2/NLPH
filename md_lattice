@@ -1,0 +1,5 @@
+,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,tense,word
+0,-1,-1,בתוך,0,1,1,-1,-1,IN,IN,-1,בתוך
+1,-1,F,עין,1,2,2,P,-1,NN,NN,-1,עיניה
+2,-1,-1,ה,2,3,3,-1,-1,DEF,DEF,-1,ה
+3,-1,F,כחול,3,4,3,P,-1,JJ,JJ,-1,כחולות
