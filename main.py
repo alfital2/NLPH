@@ -14,7 +14,7 @@ OUTPUT = 'output_file.csv'
 # ------------------------
 
 
-text = "פרטיך אינם נשמרים במערכת"
+text = "בכל משרד ממשלתי ממונה רכז נגישות מטעמו"
 
 # Escape double quotes in JSON.
 

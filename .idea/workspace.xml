@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e90058a8-d6a4-4c7e-86b8-bce16d5741e5" name="Default Changelist" comment="adding comments">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output_file.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="e77dfdab-fe99-4929-b6d7-405432eeccba" />
+  <component name="ProjectId" id="1k6XNue8DwN4WeYUvZO3vHXppbb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e90058a8-d6a4-4c7e-86b8-bce16d5741e5" name="Default Changelist" comment="" />
+      <created>1605021978130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605021978130</updated>
+      <workItem from="1605021994695" duration="1837000" />
+      <workItem from="1605189467059" duration="884000" />
+      <workItem from="1605552324392" duration="8501000" />
+      <workItem from="1605686082988" duration="1244000" />
+      <workItem from="1605809543334" duration="9000" />
+      <workItem from="1606666628319" duration="2120000" />
+    </task>
+    <task id="LOCAL‎00001" summary="Merge branch 'master' of https://github.com/alfital2/NLPH&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <created>1605624741967</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1605624741967</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="deleting some files">
+      <created>1605624816560</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1605624816560</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="refactored  - adding constants names">
+      <created>1605628281092</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1605628281092</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="adding comments">
+      <created>1605628508686</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1605628508686</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/alfital2/NLPH&#10;&#10;# Conflicts:&#10;#&#9;.gitignore" />
+    <MESSAGE value="deleting some files" />
+    <MESSAGE value="refactored  - adding constants names" />
+    <MESSAGE value="adding comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding comments" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="8" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606667239774">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="8" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606667239774" />
+    <state x="807" y="497" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1605622905754">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="807" y="497" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1605622905754" />
+    <state width="1398" height="162" key="GridCell.Tab.0.bottom" timestamp="1606669031051">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="162" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606669031051" />
+    <state width="1878" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605629679740" />
+    <state width="1398" height="232" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605622379232" />
+    <state width="1878" height="528" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1605620945392" />
+    <state width="1398" height="162" key="GridCell.Tab.0.center" timestamp="1606669031050">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="162" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606669031050" />
+    <state width="1878" height="232" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605629679739" />
+    <state width="1398" height="232" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605622379232" />
+    <state width="1878" height="528" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1605620945391" />
+    <state width="1398" height="162" key="GridCell.Tab.0.left" timestamp="1606669031049">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="162" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606669031049" />
+    <state width="1878" height="232" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605629679738" />
+    <state width="1398" height="232" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605622379231" />
+    <state width="1878" height="528" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1605620945391" />
+    <state width="1398" height="162" key="GridCell.Tab.0.right" timestamp="1606669031051">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="162" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606669031051" />
+    <state width="1878" height="232" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605629679740" />
+    <state width="1398" height="232" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605622379232" />
+    <state width="1878" height="528" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1605620945392" />
+    <state x="601" y="368" key="MultipleFileMergeDialog" timestamp="1605624738621">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="601" y="368" key="MultipleFileMergeDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1605624738621" />
+    <state x="101" y="89" key="SettingsEditor" timestamp="1606667029484">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="101" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606667029484" />
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1605629677660">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605629677660" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1606669031035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

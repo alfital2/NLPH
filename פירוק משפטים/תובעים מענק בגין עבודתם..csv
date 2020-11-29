@@ -1,0 +1,76 @@
+﻿,token 0,token 1,token 2,token 3
+0,תובעים,מענק,בגין,עבודתם
+1,,,,
+,lemma 0,lemma 1,lemma 2,lemma 3,lemma 4
+0,תבע,מ,ענק,בגין,עבודה
+1,,,,,
+,segment 0,segment 1,segment 2,segment 3,segment 4
+0,תובעים,מ,ענק,בגין,עבודתם
+1,,,,,
+,num,word,lemma,pos,pos_2,empty,dependency_arc,dependency_part,dependency_arc_2,dependency_part_2
+0,1,תובעים,תבע,BN,BN,gen=M|num=P|per=A,0,ROOT,_,_
+1,2,מ,מ,PREPOSITION,PREPOSITION,,1,comp,_,_
+2,3,ענק,ענק,NN,NN,gen=M|num=S,2,pobj,_,_
+3,4,בגין,בגין,IN,IN,,1,prepmod,_,_
+4,5,עבודתם,עבודה,NN,NN,gen=F|num=S|suf_gen=M|suf_num=P|suf_per=3,4,pobj,_,_
+5,,,,,,,,,,
+,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,suf_gen,suf_num,suf_per,tense,word
+0,VB,1,תבע,0,1,-1,P,A,VB,-1,-1,-1,-1,BEINONI,תובעים
+1,NN,1,תובע,0,1,-1,P,-1,NN,-1,-1,-1,-1,-1,תובעים
+2,BN,1,תבע,0,1,-1,P,A,BN,-1,-1,-1,-1,-1,תובעים
+3,PREPOSITION,2,מ,1,2,-1,-1,-1,PREPOSITION,-1,-1,-1,-1,-1,מ
+4,NN,2,מענק,1,3,-1,S,-1,NN,-1,-1,-1,-1,-1,מענק
+5,NNT,2,מענק,1,3,-1,S,-1,NNT,-1,-1,-1,-1,-1,מענק
+6,NNT,2,ענק,2,3,-1,S,-1,NNT,-1,-1,-1,-1,-1,ענק
+7,NN,2,ענק,2,3,-1,S,-1,NN,-1,-1,-1,-1,-1,ענק
+8,JJ,2,ענק,2,3,-1,S,-1,JJ,-1,-1,-1,-1,-1,ענק
+9,JJT,2,ענק,2,3,-1,S,-1,JJT,-1,-1,-1,-1,-1,ענק
+10,NNP,3,בגין,3,4,-1,S,-1,NNP,-1,-1,-1,-1,-1,בגין
+11,IN,3,בגין,3,4,-1,-1,-1,IN,-1,-1,-1,-1,-1,בגין
+12,NN,4,עבודה,4,5,-1,S,-1,NN,-1,M,P,3,-1,עבודתם
+13,,,,,,,,,,,,,,,
+,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,tense,word
+0,-1,M,תבע,0,1,1,P,A,BN,BN,-1,תובעים
+1,-1,-1,מ,1,2,2,-1,-1,PREPOSITION,PREPOSITION,-1,מ
+2,-1,M,ענק,2,3,2,S,-1,NN,NN,-1,ענק
+3,-1,-1,בגין,3,4,3,-1,-1,IN,IN,-1,בגין
+4,-1,F,עבודה,4,5,4,S,-1,NN,NN,-1,עבודתם
+5,,,,,,,,,,,,
+,token 0,token 1,token 2,token 3
+0,תובעים,מענק,בגין,עבודתם
+1,,,,
+,lemma 0,lemma 1,lemma 2,lemma 3,lemma 4
+0,תבע,מ,ענק,בגין,עבודה
+1,,,,,
+,segment 0,segment 1,segment 2,segment 3,segment 4
+0,תובעים,מ,ענק,בגין,עבודתם
+1,,,,,
+,num,word,lemma,pos,pos_2,empty,dependency_arc,dependency_part,dependency_arc_2,dependency_part_2
+0,1,תובעים,תבע,BN,BN,gen=M|num=P|per=A,0,ROOT,_,_
+1,2,מ,מ,PREPOSITION,PREPOSITION,,1,comp,_,_
+2,3,ענק,ענק,NN,NN,gen=M|num=S,2,pobj,_,_
+3,4,בגין,בגין,IN,IN,,1,prepmod,_,_
+4,5,עבודתם,עבודה,NN,NN,gen=F|num=S|suf_gen=M|suf_num=P|suf_per=3,4,pobj,_,_
+5,,,,,,,,,,
+,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,suf_gen,suf_num,suf_per,tense,word
+0,VB,1,תבע,0,1,-1,P,A,VB,-1,-1,-1,-1,BEINONI,תובעים
+1,NN,1,תובע,0,1,-1,P,-1,NN,-1,-1,-1,-1,-1,תובעים
+2,BN,1,תבע,0,1,-1,P,A,BN,-1,-1,-1,-1,-1,תובעים
+3,PREPOSITION,2,מ,1,2,-1,-1,-1,PREPOSITION,-1,-1,-1,-1,-1,מ
+4,NN,2,מענק,1,3,-1,S,-1,NN,-1,-1,-1,-1,-1,מענק
+5,NNT,2,מענק,1,3,-1,S,-1,NNT,-1,-1,-1,-1,-1,מענק
+6,NNT,2,ענק,2,3,-1,S,-1,NNT,-1,-1,-1,-1,-1,ענק
+7,NN,2,ענק,2,3,-1,S,-1,NN,-1,-1,-1,-1,-1,ענק
+8,JJ,2,ענק,2,3,-1,S,-1,JJ,-1,-1,-1,-1,-1,ענק
+9,JJT,2,ענק,2,3,-1,S,-1,JJT,-1,-1,-1,-1,-1,ענק
+10,NNP,3,בגין,3,4,-1,S,-1,NNP,-1,-1,-1,-1,-1,בגין
+11,IN,3,בגין,3,4,-1,-1,-1,IN,-1,-1,-1,-1,-1,בגין
+12,NN,4,עבודה,4,5,-1,S,-1,NN,-1,M,P,3,-1,עבודתם
+13,,,,,,,,,,,,,,,
+,empty,gen,lemma,num,num_2,num_last,num_s_p,per,pos,pos_2,tense,word
+0,-1,M,תבע,0,1,1,P,A,BN,BN,-1,תובעים
+1,-1,-1,מ,1,2,2,-1,-1,PREPOSITION,PREPOSITION,-1,מ
+2,-1,M,ענק,2,3,2,S,-1,NN,NN,-1,ענק
+3,-1,-1,בגין,3,4,3,-1,-1,IN,IN,-1,בגין
+4,-1,F,עבודה,4,5,4,S,-1,NN,NN,-1,עבודתם
+5,,,,,,,,,,,,
