@@ -14,7 +14,8 @@ OUTPUT = 'output_file.csv'
 # ------------------------
 
 
-text = "בתוך עיניה הכחולות"
+text = "פרטיך אינם נשמרים במערכת"
+
 # Escape double quotes in JSON.
 
 text = text.replace(r'"', r'\"')
@@ -77,3 +78,4 @@ segment_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
 dep_tree_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
 ma_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
 md_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+
