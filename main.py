@@ -4,6 +4,8 @@ import pandas as pd
 import os
 
 # ------------------------ CONSTANTS
+from problematic_words import problematic_words
+
 TOKENIZED = 'tokenized_text'
 SEGMENTED = 'segmented_text'
 LEMMAS = 'lemmas'
@@ -13,20 +15,27 @@ MD_LATTICE = 'md_lattice'
 OUTPUT = 'output_file.csv'
 # ------------------------
 
+def send_data_to_YAP(text):
 
-text = "ניתן לבצע חיפוש על ידי בחירה באחת או יותר"
+    # Escape double quotes in JSON.
 
-# Escape double quotes in JSON.
+    text = text.replace(r'"', r'\"')
+    url = 'https://www.langndata.com/api/heb_parser?token=84bca6503e3bb5fd85727a9f926fe4ef'
+    _json = '{"data":"' + text + '"}'
+    headers = {'content-type': 'application/json'}
+    r = requests.post(url, data=_json.encode('utf-8'), headers={'Content-type': 'application/json; charset=utf-8'})
+    json_object = r.json()
 
-text = text.replace(r'"', r'\"')
-url = 'https://www.langndata.com/api/heb_parser?token=84bca6503e3bb5fd85727a9f926fe4ef'
-_json = '{"data":"' + text + '"}'
-headers = {'content-type': 'application/json'}
-r = requests.post(url, data=_json.encode('utf-8'), headers={'Content-type': 'application/json; charset=utf-8'})
-json_object = r.json()
+    json_formatted_str = json.dumps(json_object, indent=2, ensure_ascii=False)
+    dict_from_json = json.loads(json_formatted_str)
+    return dict_from_json
 
-json_formatted_str = json.dumps(json_object, indent=2, ensure_ascii=False)
-dict_from_json = json.loads(json_formatted_str)
+def remove_hard_to_phrase_words(text):
+    for word in text.split(' '):
+        if word in problematic_words:
+            text = text.replace(word, problematic_words[word])
+
+    return text
 
 
 # this function will creat a new dataframe with the column names only. it will now put the data inside the dataframe.
@@ -59,23 +68,22 @@ def create_tokened_dataframe(string, col_name):
 def delete_file_if_already_exist():
     if os.path.exists(OUTPUT):
         os.remove(OUTPUT)
-
-
-dep_tree_df = create_dataframe_with_head_row(dict_from_json[DEPENDENCY_TREE]['0'])
-ma_lattice = create_dataframe_with_head_row(dict_from_json[MA_LATTICE]['0'])
-md_lattice = create_dataframe_with_head_row(dict_from_json[MD_LATTICE]['0'])
-
-dep_tree_df = load_data_from_json_to_df(dep_tree_df, dict_from_json[DEPENDENCY_TREE])
-ma_lattice = load_data_from_json_to_df(ma_lattice, dict_from_json[MA_LATTICE])
-md_lattice = load_data_from_json_to_df(md_lattice, dict_from_json[MD_LATTICE])
-tokenized_df = create_tokened_dataframe(dict_from_json[TOKENIZED], 'token')
-lemma_df = create_tokened_dataframe(dict_from_json[LEMMAS], 'lemma')
-segment_df = create_tokened_dataframe(dict_from_json[SEGMENTED], 'segment')
-
-tokenized_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-lemma_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-segment_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-dep_tree_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-ma_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-md_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-
+#
+#
+# dep_tree_df = create_dataframe_with_head_row(dict_from_json[DEPENDENCY_TREE]['0'])
+# ma_lattice = create_dataframe_with_head_row(dict_from_json[MA_LATTICE]['0'])
+# md_lattice = create_dataframe_with_head_row(dict_from_json[MD_LATTICE]['0'])
+#
+# dep_tree_df = load_data_from_json_to_df(dep_tree_df, dict_from_json[DEPENDENCY_TREE])
+# ma_lattice = load_data_from_json_to_df(ma_lattice, dict_from_json[MA_LATTICE])
+# md_lattice = load_data_from_json_to_df(md_lattice, dict_from_json[MD_LATTICE])
+# tokenized_df = create_tokened_dataframe(dict_from_json[TOKENIZED], 'token')
+# lemma_df = create_tokened_dataframe(dict_from_json[LEMMAS], 'lemma')
+# segment_df = create_tokened_dataframe(dict_from_json[SEGMENTED], 'segment')
+#
+# tokenized_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+# lemma_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+# segment_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+# dep_tree_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+# ma_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+# md_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
