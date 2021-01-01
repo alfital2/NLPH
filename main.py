@@ -68,22 +68,23 @@ def create_tokened_dataframe(string, col_name):
 def delete_file_if_already_exist():
     if os.path.exists(OUTPUT):
         os.remove(OUTPUT)
-#
-#
-# dep_tree_df = create_dataframe_with_head_row(dict_from_json[DEPENDENCY_TREE]['0'])
-# ma_lattice = create_dataframe_with_head_row(dict_from_json[MA_LATTICE]['0'])
-# md_lattice = create_dataframe_with_head_row(dict_from_json[MD_LATTICE]['0'])
-#
-# dep_tree_df = load_data_from_json_to_df(dep_tree_df, dict_from_json[DEPENDENCY_TREE])
-# ma_lattice = load_data_from_json_to_df(ma_lattice, dict_from_json[MA_LATTICE])
-# md_lattice = load_data_from_json_to_df(md_lattice, dict_from_json[MD_LATTICE])
-# tokenized_df = create_tokened_dataframe(dict_from_json[TOKENIZED], 'token')
-# lemma_df = create_tokened_dataframe(dict_from_json[LEMMAS], 'lemma')
-# segment_df = create_tokened_dataframe(dict_from_json[SEGMENTED], 'segment')
-#
-# tokenized_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-# lemma_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-# segment_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-# dep_tree_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-# ma_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
-# md_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+
+
+def export_data_to_csv(dict_from_json):
+    dep_tree_df = create_dataframe_with_head_row(dict_from_json[DEPENDENCY_TREE]['0'])
+    ma_lattice = create_dataframe_with_head_row(dict_from_json[MA_LATTICE]['0'])
+    md_lattice = create_dataframe_with_head_row(dict_from_json[MD_LATTICE]['0'])
+
+    dep_tree_df = load_data_from_json_to_df(dep_tree_df, dict_from_json[DEPENDENCY_TREE])
+    ma_lattice = load_data_from_json_to_df(ma_lattice, dict_from_json[MA_LATTICE])
+    md_lattice = load_data_from_json_to_df(md_lattice, dict_from_json[MD_LATTICE])
+    tokenized_df = create_tokened_dataframe(dict_from_json[TOKENIZED], 'token')
+    lemma_df = create_tokened_dataframe(dict_from_json[LEMMAS], 'lemma')
+    segment_df = create_tokened_dataframe(dict_from_json[SEGMENTED], 'segment')
+
+    tokenized_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+    lemma_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+    segment_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+    dep_tree_df.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+    ma_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')
+    md_lattice.to_csv(OUTPUT, encoding='utf-8-sig', mode='a')

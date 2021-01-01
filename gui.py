@@ -8,7 +8,7 @@ from tkinter import filedialog, messagebox, font
 import pandas as pd
 
 # our modules
-from main import remove_hard_to_phrase_words, send_data_to_YAP
+from main import remove_hard_to_phrase_words, send_data_to_YAP, export_data_to_csv
 
 SCREEN_PROPORTIONS = 0.5  # half of the screen proportions
 PROGRAM_NAME = "טען טקסט"
@@ -61,6 +61,8 @@ class Gui:
         for key, val in parsed.items():
             if key == 'tokenized_text' or key == 'segmented_text' or key == 'lemmas':
                 response.insert(INSERT, '{0}:\n{1}\n\n'.format(key, val),'tag-right')
+
+        export_data_to_csv(parsed)
 
     def screen_ration_height(self):
         return int(int((self.root.winfo_screenheight() / 2) - (self.root.winfo_reqheight() / 2)) * SCREEN_PROPORTIONS)
